@@ -733,7 +733,7 @@ bool passwords()
 {
 	int i=0;
 	char ch,st[21],ch1[21]={"0000"};
-	cout<<"\n\n\t\tEnter Your Student Password: ";
+	cout<<"\n\n\t\tTo access the system please enter Your Password: ";
 	while(1)
     {
     	ch=getch();
