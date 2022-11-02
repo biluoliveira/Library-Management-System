@@ -690,7 +690,7 @@ fine:
 	{
 		system("CLS");
 		int ad;
-		cout<<"\n\n\n\t\tEnter the book NO of the book";
+		cout<<"\n\n\n\t\tEnter the NO of the book";
 		cin>>ad;
 		search_book(ad);
 		cout<<el;
@@ -700,7 +700,7 @@ fine:
 	{
 		system("CLS");
 		int ad;
-		cout<<"\n\n\n\t\tEnter the book NO of the book: ";
+		cout<<"\n\n\n\t\tEnter the NO of the book: ";
 		cin>>ad;
 		modify_book(ad);
 		cout<<el;
@@ -710,7 +710,7 @@ fine:
 	{
 		system("CLS");
 		int ad;
-		cout<<"\n\n\n\t\tEnter the book NO of the book: ";
+		cout<<"\n\n\n\t\tEnter the NO of the book: ";
 		cin>>ad;
 		delete_book(ad);
 		cout<<el;
