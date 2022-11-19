@@ -764,7 +764,7 @@ bool Admin_password() //Admin Access password is required
 {
 	int i=0;
 	char ch,st[21],ch1[21]={"1111"};
-	cout<<"\n\n\t\tEnter Your Admin Password: ";
+	cout<<"\n\n\t\tEnter Your Admin Password: ";   
 	while(1)
     {
     	ch=getch();
