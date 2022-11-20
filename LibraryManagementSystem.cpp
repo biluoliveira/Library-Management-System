@@ -764,7 +764,7 @@ bool Admin_password() //Admin Access password is required
 {
 	int i=0;
 	char ch,st[21],ch1[21]={"1111"};
-	cout<<"\n\n\t\tEnter Your Admin Password: ";   
+	cout<<"\n\n\t\tEnter Your Admin Password: ";
 	while(1)
     {
     	ch=getch();
@@ -792,6 +792,7 @@ bool Admin_password() //Admin Access password is required
     return 0;
 }
 
+
 //Main function
 int main()
 {
@@ -800,10 +801,7 @@ int main()
 	cout<<"\n\t\t\t\tLIBRARY MANAGEMENT SYSTEM";
 	cout<<"\n\t\t\t------------------------------------------";
 	cout<<"\n\t\t\t*******************************************"<<endl;
-	int i=0,j;//for processing usage 
-    char choice;//for getting choice
-    string find;//for sorting
-    string srch;
+	
     char CreateUsername [7]; //creating user name to access the system
     char CreatePassword [7]; //Password to login
     string userName; //user name ID validation
