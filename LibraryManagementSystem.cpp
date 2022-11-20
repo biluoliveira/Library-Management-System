@@ -799,8 +799,57 @@ int main()
 	cout<<"\n\t\t\t------------------------------------------";
 	cout<<"\n\t\t\t\tLIBRARY MANAGEMENT SYSTEM";
 	cout<<"\n\t\t\t------------------------------------------";
-	cout<<"\n\t\t\t*******************************************";
-	bool a=passwords();
+	cout<<"\n\t\t\t*******************************************"<<endl;
+	int i=0,j;//for processing usage 
+    char choice;//for getting choice
+    string find;//for sorting
+    string srch;
+    char CreateUsername [7]; //creating user name to access the system
+    char CreatePassword [7]; //Password to login
+    string userName; //user name ID validation
+    string userPassword; //User input password
+    int loginAttempt = 0;
+
+    cout <<"-----> ";
+    cout <<" Please create student USERNAME and PASSWORD to access the system: ";
+	cout <<"<-----\n";
+	cout<<"\n\t\t\t------------------------------------------"<<endl;
+    cout <<" MAXIMUM OF 6 LETTERS AND NUMBERS, DO NOT USE SPECIAL CHARACTERS!"<<endl;
+	cout<<"\n\t\t\t------------------------------------------"<<endl;
+    cout <<"Create your student username: ";
+    cin >> CreateUsername;
+    cout <<"Create your student password: ";
+    cin >> CreatePassword;
+ 
+   while (loginAttempt < 3)
+  { 
+  cout <<"----------------------------\n";
+  cout << "Please enter your student username: ";
+  cin >> userName;
+  cout << "Please enter your student password: ";
+  cin >> userPassword;
+
+  if (userName == CreateUsername && userPassword == CreatePassword)
+  {
+  cout << "Welcome! "<<CreateUsername<<endl;
+  break;
+  }
+       
+  else
+  {
+  cout << "Invalid login attempt. Please try again.\n" << '\n';
+  loginAttempt++;
+  }
+  }
+  if (loginAttempt == 3)
+  {
+  cout << "Too many login attempts! Try again later.";
+  return 0;
+  }
+
+cout << "Thank you for log in."<<endl;
+	
+	/*bool a=passwords();
 	if(!a)
 	{
 		for(int i=0;i<2;i++)
@@ -816,7 +865,7 @@ int main()
 				exit(0);
 			}
 		}
-	}
+	}*/
 	last:
 		cout<<"\n\n";
 	start:
