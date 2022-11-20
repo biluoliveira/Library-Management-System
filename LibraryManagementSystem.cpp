@@ -734,7 +734,7 @@ bool Admin_password() //Admin Access password is required
 	while(1)
     {
     	ch=getch();
-    	if(ch==13)
+    	if(ch==13 )
     	{
         	st[i]='\0';
         	break;
