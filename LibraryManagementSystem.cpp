@@ -726,40 +726,6 @@ fine:
 	}
 }
 
-/*Checks for correct password*/
-//The password if predefined and has to be changed through the source code 
-//of application
-bool passwords()
-{
-	int i=0;
-	char ch,st[21],ch1[21]={"0000"};
-	cout<<"\n\n\t\tTo access the system please enter Your Password: ";
-	while(1)
-    {
-    	ch=getch();
-    	if(ch==13)
-    	{
-        	st[i]='\0';
-        	break;
-    	}
-    	else if(ch==8&&i>0)
-    	{
-        	i--;
-        	cout<<"\b \b";
-    	}
-    	else
-    	{
-    		cout<<"*";
-    		st[i]=ch;
-    		i++;
-    	}
-    }
-    for(i=0;st[i]==ch1[i]&&st[i]!='\0'&&ch1[i]!='\0';i++);
-    if(st[i]=='\0'&&ch1[i]=='\0')
-    return 1;
-    else
-    return 0;
-}
 bool Admin_password() //Admin Access password is required
 {
 	int i=0;
