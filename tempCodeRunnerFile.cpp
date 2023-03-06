@@ -1,4 +1,1 @@
-
-  cout << "Welcome! "<<endl;
-  break;
-  
+#include<bits/stdc++.h>
